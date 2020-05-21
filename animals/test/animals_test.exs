@@ -5,4 +5,14 @@ defmodule AnimalsTest do
   test "greets the world" do
     assert Animals.hello() == :world
   end
+
+  test "randomise" do
+    zoo = Animals.create_zoo()
+    assert zoo != Animals.randomise(zoo)
+  end
+
+  test "randomise" do
+    zoo = Animals.create_zoo()
+    refute zoo == Animals.randomise(zoo)
+  end
 end
