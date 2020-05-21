@@ -56,7 +56,7 @@ defmodule Animals do
     # below. see_animals takes two arguments but only one needs to be specified
     # as the first is provided by the pipe operator
     Animals.create_zoo()
-    |> Animals.randomise(zoo)
+    |> Animals.randomise()
     |> Animals.see_animals(number_of_animals)
   end
 end
